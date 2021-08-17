@@ -1,0 +1,115 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap');
+
+body {
+  margin:0;
+}
+
+
+h1 {
+    text-align: center;
+    align-items: center;
+    /* font-family: 'WindSong', cursive; */
+    font-family: 'Libre Baskerville', serif;
+  font-weight:200;
+  letter-spacing: 2px;
+  font-size:100px;
+  /* color: rgb(255, 0, 221); */
+   /* color:#CDF0EA; */
+   color:#CDF0EA; 
+}
+
+
+.header {
+  position:relative;
+  text-align:center;
+  /* background-image: -webkit-image-set(url("tricolor.jpg") 5x ); */
+  background-image: url("https://media.globalcitizen.org/thumbnails/77/8a/778a75ce-8274-4499-a2aa-254f9ee099c0/gay-pride-san-paulo-brazil.jpg__1600x900_q85_crop_subsampling-2.jpg");
+/* background-image: url("https://cdn.britannica.com/89/183089-050-E869DBE2/Silhouettes-People-Holding-Gay-Pride-Symbol-Flag.jpg"); */
+  
+}
+
+
+
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:10vh;
+  text-align:center;
+}
+.lgbtq-left{
+    margin: 15rem;
+}
+
+h2{
+  font-family: 'STIX Two Text', serif;
+  font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
